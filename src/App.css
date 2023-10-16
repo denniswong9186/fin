@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+  
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/background/image7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
+.lighter-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.lighter-background::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container {
+  width: 50%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header, .sign-in-container, .sign-up-container {
+  background: rgba(240, 246, 252, 0.93); /* opacity */
+  color: #22235C;
+  text-align: center;
+  padding: 1em;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.header p, .sign-in-container p, .sign-up-container p {
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #ffffff;
+  color: #50b3a2;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: #50b3a2;
+  color: #ffffff;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #50b3a2;
+}
+
+form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;.second-container {
+  margin-top: 20px;
+}
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.second-container {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.additional-text {
+  font-size: 18px;
+  color: #333;
 }

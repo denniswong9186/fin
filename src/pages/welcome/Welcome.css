@@ -1,0 +1,36 @@
+.welcome-text {
+  width: 80%;
+  margin: auto;
+  background: rgba(240, 246, 252, 0.93);
+  color: #22235C;
+  text-align: center;
+  padding: 1em;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+.user-info-container {
+  width: 80%;
+  margin: auto;
+  background: rgba(240, 246, 252, 0.93);
+  color: #22235C;
+  text-align: center;
+  padding: 1em;
+  border-radius: 50px;
+  margin-bottom: 20px;
+
+}
+
+/* Add a hover effect to headings and links */
+.welcome-text h1:hover,
+.welcome-text h2:hover,
+.feature h3:hover {
+  color: #0047AB; /* Change the text color on hover */
+}
+
+/* Add a hover effect to links */
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
